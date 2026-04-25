@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use('/v1/aura', router);
+app.use("/v1/aura", router);
 
 app.get("/", (req, res) => {
   res.json({ status: "ok" });
