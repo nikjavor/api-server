@@ -16,7 +16,10 @@ jobs:
           host: ${{ secrets.DO_HOST }}
           username: ${{ secrets.DO_USER }}
           key: ${{ secrets.DO_SSH_SECRET_KEY }}
+          command_timeout: 30m
           script: |
+            set -e
+
             cd ~/api-server
             git pull origin prod
 
