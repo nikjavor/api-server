@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx src/server.ts",
+    "build": "tsc && tsc-alias",
+    "start": "node dist/server.js",
     "eslint-check": "npx eslint .",
     "eslint-fix": "npx eslint . --fix",
     "prettier": "npx prettier --write ."
@@ -35,6 +37,7 @@
     "globals": "^17.5.0",
     "jiti": "^2.6.1",
     "prettier": "^3.8.3",
+    "tsc-alias": "^1.8.16",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.0"
