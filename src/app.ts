@@ -12,7 +12,7 @@ app.use(cors());
 app.use("/v1/aura", router);
 
 app.get("/", (req, res) => {
-  res.json({ status: "ok" });
+  res.json({ status: "ok - live" });
 });
 
 export default app;
