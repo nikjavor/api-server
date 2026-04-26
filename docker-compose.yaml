@@ -1,8 +1,6 @@
 services:
   api:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/nikjavor/api-server:latest
     container_name: api-server
     restart: unless-stopped
     env_file:
