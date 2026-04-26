@@ -10,7 +10,7 @@ permissions:
   packages: write
 
 jobs:
-  build_docker_image:
+  build:
     runs-on: ubuntu-latest
 
     outputs:
